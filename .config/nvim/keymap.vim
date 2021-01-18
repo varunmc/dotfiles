@@ -15,6 +15,10 @@ noremap         ≠ :20sp term:///bin/bash<cr>
 noremap <leader>≠ :vs term:///bin/bash<cr>
 """
 
+""" Search/Replace
+map <esc> <esc>:noh<cr>
+"""
+
 """ Navigation
 " close active buffer
 noremap ∑ :bd!<cr>
