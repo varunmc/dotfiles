@@ -16,11 +16,14 @@ noremap <leader>≠ :vs term:///bin/bash<cr>
 """
 
 """ Search/Replace
-map <esc> <esc>:noh<cr>
+map  <esc> <esc>:noh<cr>
 """
 
 """ Navigation
-" close active buffer
+" maximise split
+noremap <c-o> <c-w>o
+tmap    <c-o> <esc><c-w>oi
+" close split/buffer
 noremap ∑ :bd!<cr>
 tmap    ∑ <esc>:bd!<cr>
 " goto split
