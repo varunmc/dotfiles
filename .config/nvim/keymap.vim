@@ -25,7 +25,7 @@ noremap <c-o> <c-w>o
 tmap    <c-o> <esc><c-w>oi
 " close split/buffer
 noremap ∑ :bd<cr>
-tmap    ∑ <esc>:bd<cr>
+tmap    ∑ <esc>:bd!<cr>
 " goto split
 noremap <c-h> <c-w>h
 noremap <c-j> <c-w>j
