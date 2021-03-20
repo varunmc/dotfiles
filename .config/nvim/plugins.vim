@@ -11,10 +11,16 @@ endif
 
 " plugins
 call plug#begin('~/.vim/plugged')
-	Plug 'airblade/vim-rooter'
+  " look & feel
 	Plug 'morhetz/gruvbox'
+  " move context automatically
+	Plug 'airblade/vim-rooter'
+  " lsp
+  Plug 'neovim/nvim-lspconfig'
+  " sensible defaults
 	Plug 'tpope/vim-sensible'
 call plug#end()
 
 " plugin configurations
 source ~/.config/nvim/gruvbox.vim
+

@@ -4,13 +4,11 @@
 " (https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf)
 "
 " Modifiers (⌘⌃↩⌥↑)
+" Modifications:
 "   ⌘ -> ⌥
 """
 
 """ General
-" maximize split
-noremap  <c-o> <c-w>o
-tnoremap <c-o> <esc><c-w>oi
 " escape
 tnoremap <esc> <c-\><c-n>
 """
@@ -29,9 +27,17 @@ map <esc> <esc>:noh<cr>
 """
 
 """ Editing
-" close split/buffer (⌥w)
+" maximize split
+noremap  <c-o> <c-w>o
+tnoremap <c-o> <esc><c-w>oi
+" close split (⌥w)
 noremap ∑ :bd<cr>
 tmap    ∑ <esc>:bd!<cr>
+" move lines down/up (↑⌥j/↑⌥k)
+noremap  Ô :m+<cr>==
+noremap   :m-2<cr>==
+vnoremap Ô :m '>+1<cr>gv=gv
+vnoremap  :m '<-2<cr>gv=gv
 """
 
 """ Navigation

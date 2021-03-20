@@ -49,3 +49,4 @@ set wildmenu
 set wrap
 
 syntax enable
+
