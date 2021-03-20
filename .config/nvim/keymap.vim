@@ -35,8 +35,8 @@ tmap    ∑ <esc>:bd!<cr>
 """
 
 """ Navigation
-" recent files (⌥eb)
-noremap ´b :buffers<cr>:buffer
+" show open buffers (⌥eb)
+noremap ´b :buffers<cr>:buffer<space>
 " navigate back/forward buffers (⌥h/⌥l)
 noremap ˙ :bprevious<cr>
 noremap ¬ :bnext<cr>
