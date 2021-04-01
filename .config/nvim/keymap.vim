@@ -29,7 +29,7 @@ map <esc> <esc>:noh<cr>
 """ Editing
 " maximize split
 noremap  <c-o> <c-w>o
-tnoremap <c-o> <esc><c-w>oi
+tmap <c-o> <esc><c-w>oi
 " close split (⌥w)
 noremap ∑ :bd<cr>
 tmap    ∑ <esc>:bd!<cr>
