@@ -1,7 +1,7 @@
 """
 " Key Bindings
-" Inspired by IntelliJ with a few modifications to accomodate limitations with iPad keyboards.
-" (https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf)
+" Inspired by IntelliJ with a modifications to accomodate limitations with iPad keyboards.
+" https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf
 "
 " Modifiers (⌘⌃↩⌥↑)
 " Modifications:
@@ -28,8 +28,8 @@ map <esc> <esc>:noh<cr>
 
 """ Editing
 " maximize split
-noremap  <c-o> <c-w>o
-tmap <c-o> <esc><c-w>oi
+noremap <c-o> <c-w>o
+tmap    <c-o> <esc><c-w>oi
 " close split (⌥w)
 noremap ∑ :bd<cr>
 tmap    ∑ <esc>:bd!<cr>
