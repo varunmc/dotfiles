@@ -1,0 +1,21 @@
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  pager = true
+  status = auto
+  ui = true
+[core]
+  editor = nvim
+[credential]
+  helper = !aws codecommit credential-helper $@
+  UseHttpPath = true
+[user]
+  name = Varun Chandran
+  email = varunmc@bluebrain.ai
+[pull]
+	rebase = true
+[fetch]
+	prune = true
+[diff]
+	colorMoved = zebra
