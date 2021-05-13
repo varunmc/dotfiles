@@ -12,10 +12,18 @@
   UseHttpPath = true
 [user]
   name = Varun Chandran
-  email = varunmc@bluebrain.ai
+	email = varunmc@users.noreply.github.com
+	signingkey = 0D89A61907C7F01A
 [pull]
 	rebase = true
 [fetch]
 	prune = true
 [diff]
 	colorMoved = zebra
+[commit]
+	gpgsign = true
+[alias]
+	logs = log --show-signature
+  shows = show --show-signature
+  tags = tag --sign
+

@@ -29,7 +29,6 @@ set mouse=a
 set noerrorbells
 set nofoldenable
 set noswapfile
-set number
 set relativenumber
 set ruler
 set scrolloff=1
