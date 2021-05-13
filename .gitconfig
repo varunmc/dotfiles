@@ -1,3 +1,7 @@
+[alias]
+  logs = log --show-signature
+  shows = show --show-signature
+  tags = tag --sign
 [color]
   branch = auto
   diff = auto
@@ -5,25 +9,20 @@
   pager = true
   status = auto
   ui = true
+[commit]
+  gpgsign = true
 [core]
   editor = nvim
 [credential]
   helper = !aws codecommit credential-helper $@
   UseHttpPath = true
+[diff]
+  colorMoved = zebra
+[fetch]
+  prune = true
+[pull]
+  rebase = true
 [user]
   name = Varun Chandran
-	email = varunmc@users.noreply.github.com
-	signingkey = 0D89A61907C7F01A
-[pull]
-	rebase = true
-[fetch]
-	prune = true
-[diff]
-	colorMoved = zebra
-[commit]
-	gpgsign = true
-[alias]
-	logs = log --show-signature
-  shows = show --show-signature
-  tags = tag --sign
-
+  email = varunmc@users.noreply.github.com
+  signingkey = 0D89A61907C7F01A
