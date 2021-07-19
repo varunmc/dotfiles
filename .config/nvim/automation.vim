@@ -3,7 +3,7 @@
 """"""""""""""""""""""
 
 augroup Automation
-        autocmd!
+  autocmd!
 	" reload settings on update
 	autocmd BufWritePost ~/.config/nvim/*.vim source $MYVIMRC
 	autocmd BufWritePost ~/.vimrc source $MYVIMRC
