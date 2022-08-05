@@ -1,51 +1,27 @@
-""""""""""""""" 
-" Look & Feel "
-""""""""""""""" 
+" Look & Feel
 
 filetype indent on
 
 let mapleader = '\'
+let g:netrw_fastbrowse = 0
 
-set autoindent
-set autoread
-set background=dark
-set complete-=i
-set clipboard+=unnamedplus
-set cursorline
-set display+=lastline
-set encoding=utf8
-set expandtab
-set foldmethod=indent
-set foldnestmax=3
-set formatoptions+=j
-set hidden
-set history=1000
-set hlsearch
-set incsearch
-set laststatus=2
-set lazyredraw
-set linebreak
-set mouse=a
-set noerrorbells
-set nofoldenable
-set noswapfile
-set relativenumber
-set ruler
-set scrolloff=1
-set shiftround
-set shiftwidth=2
-set sidescrolloff=5
+set autoindent  " copy indent to a new line
+set autoread  " reload a file if changed on disk
+set clipboard+=unnamedplus  " integration with system clipboard
+set expandtab  " convert tabs to spaces
+set hidden  " hide unsaved buffers
+set number  " show absolute line numbers
+set relativenumber  " show relative line numbers
+set scrolloff=999  " center cursor line vertically
+set shiftwidth=2  " indent length in spaces
 set smartcase
+set smartindent  " autoindent when starting a new line
 set smarttab
-set splitbelow
-set splitright
-set tabpagemax=50
-set tabstop=2
-set title
-set visualbell
-set wildignore+=.class
-set wildmenu
-set wrap
+set softtabstop=2
+set splitbelow  " horizontal split below active buffer
+set splitright  " vertical split right of active buffer
+set tabstop=2  " tab length in spaces
+set wildignore+=*.class
 
 syntax enable
 

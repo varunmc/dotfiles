@@ -4,11 +4,17 @@
 
 augroup Automation
   autocmd!
-	" reload settings on update
-	autocmd BufWritePost ~/.config/nvim/*.vim source $MYVIMRC
-	autocmd BufWritePost ~/.vimrc source $MYVIMRC
 	" insert mode on terminal entry
 	autocmd BufEnter,BufWinEnter term://* startinsert
-	" normal mode on terminal exit
-	autocmd BufLeave term://* stopinsert
+	" autoload settings on update
+	autocmd BufWritePost ~/.config/nvim/*.vim source $MYVIMRC
+	autocmd BufWritePost ~/.vimrc source $MYVIMRC
+  " trigger autoread when files change on disk
+  " https://unix.stackexchange.com/questions/149209/refresh-changed-content-of-file-opened-in-vim/383044#383044
+  " https://vi.stackexchange.com/questions/13692/prevent-focusgained-autocmd-running-in-command-line-editing-mode
+  autocmd FocusGained,BufEnter,CursorHold,CursorHoldI *
+    \ if mode() !~ '\v(c|r.?|!|t)' && getcmdwintype() == '' | checktime | endif
+  " notify file changed event
+  autocmd FileChangedShellPost *
+    \ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None
 augroup END

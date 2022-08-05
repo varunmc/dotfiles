@@ -13,7 +13,7 @@ endif
 call plug#begin('~/.vim/plugged')
   " look & feel
 	Plug 'morhetz/gruvbox'
-  " move context automatically
+  " change cwd automatically
 	Plug 'airblade/vim-rooter'
   " lsp
   Plug 'neovim/nvim-lspconfig'
@@ -21,6 +21,6 @@ call plug#begin('~/.vim/plugged')
 	Plug 'tpope/vim-sensible'
 call plug#end()
 
-" plugin configurations
+" configurations
 source ~/.config/nvim/gruvbox.vim
 
