@@ -14,13 +14,12 @@ call plug#begin('~/.vim/plugged')
   " look & feel
 	Plug 'morhetz/gruvbox'
   " change cwd automatically
-	Plug 'airblade/vim-rooter'
+	"Plug 'airblade/vim-rooter'
   " lsp
-  Plug 'neovim/nvim-lspconfig'
+  "Plug 'neovim/nvim-lspconfig'
   " sensible defaults
-	Plug 'tpope/vim-sensible'
+	"Plug 'tpope/vim-sensible'
 call plug#end()
 
 " configurations
 source ~/.config/nvim/gruvbox.vim
-
