@@ -9,8 +9,6 @@
   pager = true
   status = auto
   ui = true
-[commit]
-  gpgsign = true
 [core]
   editor = nvim
 [credential]
@@ -24,5 +22,6 @@
   rebase = true
 [user]
   name = Varun Chandran
-  email = varunmc@users.noreply.github.com
-  signingkey = 0D89A61907C7F01A
+  email = varunmc@blbr.ai
+[push]
+	autoSetupRemote = true
