@@ -1,6 +1,4 @@
-"""""""""""
-" Plugins "
-"""""""""""
+" Plugins
 
 " autoload vim-plug
 " https://github.com/junegunn/vim-plug
@@ -14,11 +12,9 @@ call plug#begin('~/.vim/plugged')
   " look & feel
 	Plug 'morhetz/gruvbox'
   " change cwd automatically
-	"Plug 'airblade/vim-rooter'
-  " lsp
-  "Plug 'neovim/nvim-lspconfig'
+	Plug 'airblade/vim-rooter'
   " sensible defaults
-	"Plug 'tpope/vim-sensible'
+	Plug 'tpope/vim-sensible'
 call plug#end()
 
 " configurations

@@ -10,7 +10,6 @@ fi
 
 # User specific aliases and functions
 
-# aliases
 alias _='env | sort | less'
 alias dc=docker-compose
 alias dot='git --git-dir /home/ec2-user/.dotfiles --work-tree /home/ec2-user'

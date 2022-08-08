@@ -1,5 +1,4 @@
 " Look & Feel
-""
 
 filetype indent on
 
