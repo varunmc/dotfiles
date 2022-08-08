@@ -12,6 +12,6 @@ fi
 
 alias _='env | sort | less'
 alias dc=docker-compose
-alias dot='git --git-dir /home/ec2-user/.dotfiles --work-tree /home/ec2-user'
-alias 'kafka-topics'='kafka-topics.sh --bootstrap-server $BROKER_URL'
+alias dot='git --git-dir $HOME/.dotfiles --work-tree $HOME'
+alias 'kafka-topics'='kafka-topics.sh --bootstrap-server kafka:9092'
 alias kafkacat='/usr/local/bin/kafkacat -b kafka:9092 -K='
