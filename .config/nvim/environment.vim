@@ -1,6 +1,7 @@
 " Look & Feel
 
 filetype indent on
+syntax enable
 
 let mapleader = '\'
 let g:netrw_fastbrowse = 0
@@ -22,5 +23,3 @@ set splitbelow              " horizontal split below active buffer
 set splitright              " vertical split right of active buffer
 set tabstop=2               " tab length in spaces
 set wildignore+=*.class
-
-syntax enable

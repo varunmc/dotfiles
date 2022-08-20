@@ -15,3 +15,4 @@ alias dc=docker-compose
 alias dot='git --git-dir $HOME/.dotfiles --work-tree $HOME'
 alias 'kafka-topics'='kafka-topics.sh --bootstrap-server kafka:9092'
 alias kafkacat='/usr/local/bin/kafkacat -b kafka:9092 -K='
+alias vim=nvim
