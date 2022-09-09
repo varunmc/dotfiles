@@ -9,12 +9,14 @@ endif
 
 " plugins
 call plug#begin('~/.vim/plugged')
-  " look & feel
-	Plug 'morhetz/gruvbox'
   " change cwd automatically
 	Plug 'airblade/vim-rooter'
+  " look & feel
+	Plug 'morhetz/gruvbox'
   " sensible defaults
 	Plug 'tpope/vim-sensible'
+  " git support
+  Plug 'tpope/vim-fugitive'
 call plug#end()
 
 " configurations
