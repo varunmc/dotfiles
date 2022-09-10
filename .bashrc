@@ -16,3 +16,6 @@ alias dot='git --git-dir $HOME/.dotfiles --work-tree $HOME'
 alias kcat='/usr/local/bin/kafkacat -b kafka:9092 -K='
 alias produce='kafka-console-producer.sh --bootstrap-server kafka:9092'
 alias topics='kafka-topics.sh --bootstrap-server kafka:9092'
+
+# Avoid Jolokia messages when using Kafka CLI utilities
+unset KAFKA_OPTS
