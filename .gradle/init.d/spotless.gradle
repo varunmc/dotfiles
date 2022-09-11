@@ -1,0 +1,11 @@
+allprojects {
+  afterEvaluate {
+    // https://www.jvt.me/posts/2020/05/15/gradle-spotless
+    def spotlessApply = tasks.findByName('spotlessApply')
+    if (spotlessApply) {
+      tasks.withType(JavaCompile) {
+        finalizedBy(spotlessApply)
+      }
+    }
+  }
+}
