@@ -21,8 +21,3 @@ alias topics='kafka-topics.sh --bootstrap-server kafka:9092'
 
 # Avoid Jolokia messages when using Kafka CLI utilities
 unset KAFKA_OPTS
-
-# Set prompt
-if [ -f ~/.bash_prompt ]; then
-  . ~/.bash_prompt
-fi
