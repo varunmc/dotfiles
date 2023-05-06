@@ -9,15 +9,27 @@ endif
 
 " plugins
 call plug#begin('~/.vim/plugged')
-  " change cwd automatically
-	Plug 'airblade/vim-rooter'
-  " look & feel
-	Plug 'morhetz/gruvbox'
+
   " sensible defaults
 	Plug 'tpope/vim-sensible'
+
+  " auto cwd
+	Plug 'airblade/vim-rooter'
+
   " git support
   Plug 'tpope/vim-fugitive'
+
+  " flux support
+  Plug 'gianarb/vim-flux'
+
+  " webapi support
+  "" required by vim-flux
+  Plug 'mattn/webapi-vim'
+
+  " look & feel
+	Plug 'morhetz/gruvbox'
 call plug#end()
 
 " configurations
+source ~/.config/nvim/vim-flux.vim
 source ~/.config/nvim/gruvbox.vim
