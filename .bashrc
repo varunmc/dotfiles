@@ -17,10 +17,12 @@ alias consumers='kafka-consumer-groups.sh --bootstrap-server kafka:9092'
 alias dc=docker-compose
 alias dcl='docker-compose logs --no-log-prefix'
 alias dot='git --git-dir $HOME/.dotfiles --work-tree $HOME'
+alias gs='git status'
 alias jmxterm='java -jar /opt/jmxterm-1.0.3-uber.jar'
 alias kcat="kcat -b kafka:9092 -f '\nKey:%k Timestamp:%T Partition:%p Offset:%o Headers:%h\n  %s\n'"
 alias produce='kafka-console-producer.sh --bootstrap-server kafka:9092 --topic'
 alias topics='kafka-topics.sh --bootstrap-server kafka:9092'
+alias tree='tree | less'
 
 # Enable completion for influxdb
 source <(influx completion bash)
