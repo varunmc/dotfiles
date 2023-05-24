@@ -1,8 +1,12 @@
-" Key Bindings
+""""""""""""""""
+" Key Bindings "
+""""""""""""""""
 " Inspired by IntelliJ with a modifications to accomodate limitations with iPad keyboards.
 " https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf
 "
-" Modifiers (⌘⌃↩⌥↑)
+" Modifiers:
+"   ⌘ ⌃ ↩ ⌥ ↑
+"
 " Modifications:
 "   ⌘ -> ⌥
 ""

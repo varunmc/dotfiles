@@ -11,6 +11,7 @@ set autoread                " reload a file if changed on disk
 set clipboard+=unnamedplus  " integration with system clipboard
 set expandtab               " convert tabs to spaces
 set hidden                  " hide unsaved buffers
+set noswapfile              " disable the use of swap files
 set number                  " show absolute line numbers
 set relativenumber          " show relative line numbers
 set scrolloff=999           " center cursor line vertically

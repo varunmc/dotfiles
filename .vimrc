@@ -10,3 +10,5 @@ source ~/.config/nvim/environment.vim
 source ~/.config/nvim/keymap.vim
 " automated behavior
 source ~/.config/nvim/automation.vim
+" user-defined functions
+source ~/.config/nvim/functions.vim
