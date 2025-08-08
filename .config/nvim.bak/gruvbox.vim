@@ -1,4 +1,4 @@
-"" Environment
+" https://github.com/morhetz/gruvbox
+
 let g:gruvbox_contrast_dark = 'hard'
-" activate theme
 colorscheme gruvbox
